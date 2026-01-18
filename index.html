@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grúas Alexis - Towing Service in San Diego de la Unión, Gto.</title>
+    <meta name="description" content="Reliable towing service in San Diego de la Unión, Guanajuato. 24/7 roadside assistance, towing service for cars, trucks, and motorcycles.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <!-- PWA CONFIGURATION -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#e67e22">
+    
+    <!-- iOS SPECIFIC META TAGS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Grúas Alexis">
+    <link rel="apple-touch-icon" href="assets/images/icon-180.png">
+    
+    <!-- ANDROID CHROME -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- FONTS & STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- NUEVO: Banner de instalación PWA -->
+    <div id="pwaInstallBanner" class="pwa-banner">
+        <div class="pwa-banner-content">
+            <div class="pwa-banner-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="pwa-banner-text">
+                <strong>Instalar App Grúas Alexis</strong>
+                <small>Para acceso rápido y funcionamiento offline</small>
+            </div>
+            <div class="pwa-banner-buttons">
+                <button id="pwaInstallBtn" class="btn-pwa-install">
+                    <i class="fas fa-download"></i> Instalar
+                </button>
+                <button id="pwaDismissBtn" class="btn-pwa-dismiss">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-truck-tow"></i> Grúas Alexis</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+524427128200" class="btn-call">Call Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>24/7 Towing Service in San Diego de la Unión</h2>
+                <p>Fast and professional roadside assistance for cars, trucks, and motorcycles. We come to you wherever you need us.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+524427128200" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <button id="whatsappBtn" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/auxilio_vial.jpeg" alt="Roadside assistance tow truck">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Towing</h3>
+                    <p>Towing service for all types of automobiles, from compact cars to SUVs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Truck Towing</h3>
+                    <p>Safe transportation for light and heavy-duty trucks.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Motorcycle Towing</h3>
+                    <p>Specialized transportation for motorcycles with proper securing equipment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <p>Emergency assistance 24 hours a day, 365 days a year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Grúas Alexis</h2>
+                <p>With over 15 years of experience, <strong>Grúas Alexis</strong> is the leading roadside assistance company in San Diego de la Unión and surrounding areas. Our commitment is to provide fast, safe, and reliable service when you need it most.</p>
+                <p>We have modern tow trucks and specialized equipment to handle all types of vehicles, from cars to cargo trucks. Our operators are trained to provide professional service and careful handling of your vehicle.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quick response in emergencies</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Trained and certified personnel</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Modern and safe equipment</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fair and transparent rates</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/operador.jpg" alt="Professional tow truck operator">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Independencia 21 San Diego de la Unión, Gto.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>24/7 Phone</h4>
+                            <p><a href="tel:+524427128200">+52 442 712 8200</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Service Hours</h4>
+                            <p>24 hours, 7 days a week</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:contacto@gruasalexis.com">contacto@gruasalexis.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h3>Service Area</h3>
+                    <div class="map">
+                        <!-- Google Maps static map -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.014891895712!2d-100.87283243566743!3d21.467932309009836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b20cd710b51ef%3A0x34dd17c82bfe9dfc!2sSan%20Diego%20de%20la%20Uni%C3%B3n%2C%20Gto.!5e0!3m2!1sen!2smx!4v1768622612032!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="map-description">Services in San Diego de la Unión and surrounding communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-truck-tow"></i> Grúas Alexis</h3>
+                    <p>Reliable towing service in San Diego de la Unión, Guanajuato.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+524427128200">+52 442 712 8200</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Independencia 21 San Diego de la Unión, Gto.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Grúas Alexis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-icon">
+            <!-- SVG as fallback if FontAwesome doesn't load -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-svg">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+            <i class="fab fa-whatsapp fa-2x whatsapp-font"></i>
+        </div>
+    </div>
+
+    <!-- WhatsApp Modal -->
+    <div class="modal-overlay" id="whatsappModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2><i class="fab fa-whatsapp"></i> Contact via WhatsApp</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-content">
+                <p class="modal-description">Complete the following form to send a message via WhatsApp. You can include your location so we can find you more easily.</p>
+                
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="userName">Full name *</label>
+                        <input type="text" id="userName" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userPhone">Phone *</label>
+                        <input type="tel" id="userPhone" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userMessage">Message *</label>
+                        <textarea id="userMessage" rows="4" placeholder="Describe the towing service you need" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="locationOption">Location</label>
+                        <div class="location-options">
+                            <div class="location-option">
+                                <input type="radio" id="sendLocation" name="locationOption" value="send">
+                                <label for="sendLocation">Include my current location</label>
+                            </div>
+                            <div class="location-option">
+                                <input type="radio" id="customLocation" name="locationOption" value="custom">
+                                <label for="customLocation">Write location manually</label>
+                            </div>
+                            <div class="location-option">
+                                <input type="radio" id="noLocation" name="locationOption" value="none" checked>
+                                <label for="noLocation">Do not include location</label>
+                            </div>
+                        </div>
+                        <div class="location-input" id="customLocationInput" style="display: none;">
+                            <textarea id="manualLocation" rows="3" placeholder="Write your location (example: Highway to Dolores Hidalgo km 5, near the bridge, San Diego de la Unión)"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="location-status" id="locationStatus">
+                            <p id="locationText">Location not included</p>
+                            <button type="button" id="getLocationBtn" class="btn-location">
+                                <i class="fas fa-map-marker-alt"></i> Get Location
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modalCancel">Cancel</button>
+                <button class="btn btn-whatsapp" id="sendWhatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODIFICACIÓN: Botón fijo en footer para iOS -->
+    <div id="iosInstallGuide" class="ios-install-guide">
+        <button id="iosInstallBtn" class="btn-ios-install">
+            <i class="fas fa-plus-square"></i> Instalar App en iPhone
+        </button>
+    </div>
+
+
+
+    <script src="assets/js/main.js"></script>
+
+    
+    <!-- NUEVO: Service Worker Registration -->
+    <script>
+        // Registrar Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Error registrando Service Worker:', error);
+                    });
+            });
+        }
+        
+        // Detectar si es PWA instalada
+        function isRunningStandalone() {
+            return window.matchMedia('(display-mode: standalone)').matches || 
+                   window.navigator.standalone === true;
+        }
+        
+        if (isRunningStandalone()) {
+            console.log('App está corriendo como PWA instalada');
+            document.getElementById('pwaInstallBanner').style.display = 'none';
+            document.getElementById('iosInstallGuide').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
